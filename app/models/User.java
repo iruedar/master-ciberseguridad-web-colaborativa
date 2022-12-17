@@ -76,10 +76,6 @@ public class User {
         json.addProperty(Constants.User.FIELD_MARK, mark);
 
         File file = getFile();
-        if (file.exists()){
-            file.delete();
-        }
-
         try {
             file.createNewFile();
             FileOutputStream out = new FileOutputStream(file);
